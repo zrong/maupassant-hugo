@@ -20,10 +20,10 @@
                                 {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
                             </date>
                             {{ with .Params.Categories }}
-                            <div class="post-meta meta-category">
-                                |
+                            <div class="post-meta">
+                                <span>|</span>
                                 {{ range . }}
-                                    <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                <span class="meta-category"><a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a></span>
                                 {{ end }}
                             </div>
                             {{ end }}
