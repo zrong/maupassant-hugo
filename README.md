@@ -36,6 +36,7 @@ Maupassant theme, ported to Hugo.
 18. 自定义css、js
 19. utteranc评论
 20. 部分自定义的shortcode
+21. 文章自定义摘要
 
 ## 下载安装
 
@@ -163,6 +164,15 @@ type: archives
 
 ```toml
 disqusShortname = "yourdiscussshortname"
+```
+
+#### 自定义文章摘要
+
+该主题采用了Hugo内置的摘要支持，大家可以通过`<!--more-->`自定义自己的摘要，也可以使用自动摘要，使用自动摘要时，可以在`config.toml`中设置摘要的长度
+
+```toml
+# 默认是70
+summaryLength = 140 
 ```
 
 #### utteranc

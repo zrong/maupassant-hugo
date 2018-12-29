@@ -107,6 +107,15 @@ Ads Preview [http://www.flysnow.org/](http://www.flysnow.org/)
 googleAnalytics = "GA ID"
 ```
 
+#### Custonm Summaries
+
+Support Hugo Content Summaries `<!--more-->`。You can change summary length in `config.toml` config file.
+
+```toml
+# default is 70
+summaryLength = 140 
+```
+
 #### Disqus
 
 ```toml
