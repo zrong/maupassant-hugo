@@ -1002,3 +1002,50 @@ img.alignright {
 .post-copyright a {
     border-bottom: 1px solid #999;
 }
+
+/* table*/
+table {
+    margin: auto auto 15px;
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+
+table {
+    margin: auto auto 15px;
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left; 
+}
+tbody {
+    border: 0;
+}
+table tr th {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-bottom: 2px solid #909ba2; 
+    background-color: #F0F0F0;
+}
+table td {
+    padding: 5px 10px; 
+}
+table tr:nth-child(2n) {
+    background: #f7f8f8; 
+}
+
+table tr {
+    border: 0;
+    border-top: 1px solid #CCC;
+    background-color: white;
+}
+  
+table tr th, table tr td {
+    font-size: 1em;
+    border: 1px solid #CCC;
+    padding: 0.5em 1em;
+    text-align: left;
+}
