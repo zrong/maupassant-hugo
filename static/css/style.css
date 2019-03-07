@@ -991,3 +991,14 @@ img.alignright {
     background: #F8F8F8;
     border-bottom-color: #D26911; 
 }
+/* 版权声明 */
+.post-copyright {
+    margin: 2em 0 0;
+    padding: 0.5em 1em;
+    border-left: 3px solid #ff1700;
+    background-color: #f9f9f9;
+    list-style: none;
+}
+.post-copyright a {
+    border-bottom: 1px solid #999;
+}
