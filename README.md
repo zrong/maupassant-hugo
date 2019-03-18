@@ -166,6 +166,8 @@ type: archives
 disqusShortname = "yourdiscussshortname"
 ```
 
+替换成你自己的Disqus名字即可。
+
 #### 自定义文章摘要
 
 该主题采用了Hugo内置的摘要支持，大家可以通过`<!--more-->`自定义自己的摘要，也可以使用自动摘要，使用自动摘要时，可以在`config.toml`中设置摘要的长度
@@ -202,8 +204,6 @@ summaryLength = 140
 [params]
   busuanzi = true
 ```
-
-替换成你自己的Disqus名字即可。
 
 #### 禁止分类的名称转为小写
 
