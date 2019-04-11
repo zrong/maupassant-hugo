@@ -37,6 +37,7 @@ Maupassant theme, ported to Hugo.
 19. utteranc评论
 20. 部分自定义的shortcode
 21. 文章自定义摘要
+22. 支持版权声明
 
 ## 下载安装
 
@@ -176,6 +177,18 @@ disqusShortname = "yourdiscussshortname"
 # 默认是70
 summaryLength = 140 
 ```
+
+#### 开启版权声明
+
+该主题支持开启版权声明，如果要启用版权声明，可以在`config.toml`里添加如下配置即可。
+
+```toml
+[params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+```
+
+其中`name`和`link`可以换成自己使用的版权声明协议和链接
 
 #### utteranc
 
