@@ -15,29 +15,29 @@ Maupassant theme, ported to Hugo.
 1. 最近发表的文章支持，显示最近的10篇 
 2. 分类支持，并且可以显示分类内的文章数量
 3. 标签云支持
+4. 文章目录支持
 4. 一键回到页面顶部
-5. RSS支持，并且可以自动发现RSS
+13. 支持关键字SEO优化
 6. 自定义菜单支持，不限个数，自定义排序
 7. 自定义友情链接支持
 8. 支持文章按年份日期进行归档
 9. 支持GA分析统计
-10. sitemap站点地图
+17. 不蒜子页面计数器支持
 11. 代码高亮、代码行号
     * markup、css、clike、javascript、c、csharp、bash、cpp
     * aspnet、dart、docker、markup-templating、erlang
     * go、groovy、java、json、kotlin、markdown、lua、objectivec
     * php、python、r、yaml、toml
-12. 404错误页
-13. 支持关键字SEO优化
+10. sitemap站点地图
+5. RSS支持，并且可以自动发现RSS
 14. Google站内搜索
 15. See Also 支持
 16. Disqus评论支持
-17. 不蒜子页面计数器支持
 18. 自定义css、js
 19. utteranc评论
 20. 部分自定义的shortcode
 21. 文章自定义摘要
-22. 支持版权声明
+22. 自定义广告支持
 
 ## 下载安装
 
@@ -99,6 +99,15 @@ theme = "maupassant"
 ```
 
 `identifier`标志符必须是唯一的，不能重复；`weight`用于排序，值越小越靠前。
+
+####  文章目录（大纲）
+
+该主题支持文章目录（大纲）,大纲是通过`h1~h7`标题自动生成，在MD文件里就是`##`这类标题的标记，这里建议最多使用两层文章目录，而且最好是从`h2`开始，便于SEO优化。
+如果要开启一篇文章的文章目录，只需要在`Front Matter` 添加`toc=true`即可，默认是不开启文章目录的。
+
+```toml
+toc = true
+```
 
 #### 友情链接
 

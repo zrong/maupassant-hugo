@@ -82,6 +82,14 @@ theme = "maupassant"
   url = "http://mirrors.flysnow.org/"
 ```
 
+#### TOC
+
+TOC support in Front Matter .
+
+```toml
+toc = true
+```
+
 #### Ads
 
 ```toml
