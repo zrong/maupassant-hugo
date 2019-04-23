@@ -422,6 +422,7 @@ textarea {
     list-style:none;
     padding:25px 0 0;
     font-size:16px;
+    text-align: center;
 }
 .page-navigator li {
     display:inline-block;
