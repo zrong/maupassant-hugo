@@ -42,7 +42,11 @@
     {{ range .AlternativeOutputFormats -}}
         {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    {{- if .HasShortcode "flash" }}
+    <script src="/js/swfobject.js"></script>
+    {{- end }}
 
     {{ if .Site.Params.googleAd }}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
