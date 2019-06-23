@@ -48,6 +48,14 @@
     <script src="/js/swfobject.js"></script>
     {{- end }}
 
+    {{- if .HasShortcode "download" }}
+    <script>
+    var DL_INFO_URL = {{ .Site.Data.aid.download.info }}
+    var DL_GO_URL = {{ .Site.Data.aid.download.go }}
+    </script>
+    <script src="/js/download.js"></script>
+    {{- end }}
+
     {{ if .Site.Params.googleAd }}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
