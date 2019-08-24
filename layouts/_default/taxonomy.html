@@ -33,11 +33,11 @@
                             <date class="post-meta meta-date">
                                 {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
                             </date>
-                            {{ with .Params.Categories }}
+                            {{ with .Params.Category }}
                             <div class="post-meta meta-category">
                                 |
                                 {{ range . }}
-                                    <a href="{{ "/categories/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                    <a href="{{ "/category/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
                                 {{ end }}
                             </div>
                             {{ end }}
