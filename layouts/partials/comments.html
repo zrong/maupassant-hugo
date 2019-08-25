@@ -18,12 +18,12 @@
     {{ if .Site.Params.isso.enable }}
     <script
       data-isso="//{{ .Site.Params.isso.host }}/"
-      data-isso-reply-notifications="true"
       src="//{{ .Site.Params.isso.host }}/js/embed.min.js"
       async></script>
     <section
       id="isso-thread"
       class="post bg-white"
+      data-isso-reply-notifications="true"
       data-isso-id="{{ .Params.postid }}"
       data-title="{{ .Params.slug }}"
       ></section>
