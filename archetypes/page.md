@@ -4,7 +4,7 @@ postid = "{{ .Name }}"
 date = {{ .Date }}
 isCJKLanguage = true
 toc = true
-type = "article"
+type = "page"
 slug = "{{ .Name }}"
 aliases = [ "/{{ .Name }}/",]
 +++
