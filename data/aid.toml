@@ -1,8 +1,8 @@
 [download]
-info = "https://aid.zengrong.net/dl/api/info/%s/"
+info = "https://aid.zengrong.net/dl/info/%s/"
 go = "https://aid.zengrong.net/dl/go/%s/"
 root = "https://blog.zengrong.net/uploads"
 btn_title = "下载"
 
 [pageview]
-info = "https://aid.zengrong.net/pv/api/js/%s/"
+info = "https://aid.zengrong.net/pv/js/%s/"
