@@ -16,20 +16,21 @@ function download(id) {
     else {
       $(rid).empty()
       $(rid).addClass('bg-info')
+      let f = data.file
       var ul = $('<ul>')
-      ul.append($('<li>').text(data.file_name))
-      ul.append($('<li>').text(data.file_date))
-      ul.append($('<li>').text(data.file_hits))
-      if (data.file_des) {
+      ul.append($('<li>').text(f.file_name))
+      ul.append($('<li>').text(f.file_date))
+      ul.append($('<li>').text(f.file_hits))
+      if (f.file_des) {
       ul.append($('<li>').text(data.file_des))
       }
       // TODO file的值可能是相对路径，需要判断
-      var file = null
-      if (data.file.indexOf('http') === 0) {
-      file = data.file
+      let file = null
+      if (f.file.indexOf('http') === 0) {
+        file = f.file
       }
       else {
-      file = goURL
+        file = goURL
       }
       var a = '<a href="' + file + '" target="_blank">下载文件</a>'
       ul.append($('<li>').html(a))
