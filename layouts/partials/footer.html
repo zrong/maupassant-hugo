@@ -2,10 +2,8 @@
     <div class="container">
         &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL | absURL }}">{{ .Site.Title }} By {{ .Site.Author.name }}</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
-        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
-        {{ if .Site.Params.showHostPage }}
-        Hosted by <a rel="nofollow noreferer noopener" href="https://pages.coding.me" target="_blank">Coding Pages</a>.
-        {{ end }}
+        Theme based on <a href="https://github.com/zrong/maupassant-hugo" target="_blank">maupassant</a>.
+        {{- if .Site.Params.beian }}{{ .Site.Params.beian }}{{ end }}
     </div>
 </footer>
 

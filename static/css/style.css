@@ -1075,3 +1075,40 @@ table tr th, table tr td {
 #TableOfContents li {
     list-style-type: none; 
 }
+/* label */
+.label {
+    text-align: center;
+}
+div.label {
+    margin: .5em auto;
+    border:1px solid #ccc;
+    border-width:1px 0 0 0;
+    position: relative;
+}
+
+.label span {
+    height: 20px;
+    padding: 7px 10px;
+    font-size: 12px;
+    /* line-height: 24px; */
+}
+
+.label-info span {
+    background-color: #0089e0;
+    color:white;
+}
+
+.label-danger span {
+    background-color: red;
+    color:white;
+}
+
+.label-success span {
+    background-color: green;
+    color:white;
+}
+
+.label-warning span {
+    background-color: orange;
+    color:black;
+}
