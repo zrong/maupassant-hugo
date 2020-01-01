@@ -10,3 +10,6 @@ aliases = [ "/post/{{ .Name }}.html",]
 category = [ "technology",]
 tag = [ ]
 +++
+
+
+{{<label 全文完 info>}}
