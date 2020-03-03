@@ -17,7 +17,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="{{ if or (.IsHome) (eq .Type "post") }}current{{ end }}" href="{{ .Site.homeURL | absURL }}">首页</a>
+                    <a href="https://zengrong.net">首页</a>
                     <a class="{{ if or (.IsHome) (eq .Type "post") }}current{{ end }}" href="{{ .Site.BaseURL | absURL }}">文章列表</a>
                     {{ range .Site.Menus.main }}
                     <a {{ if eq .URL $.RelPermalink }}class="current"{{ end }} href="{{ .URL | absURL }}" title="{{ .Name }}">{{ .Name }}</a>
